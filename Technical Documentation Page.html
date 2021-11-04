@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Technical Documentation Page.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="navbar">
+            <div id="test">
+                <header>
+                    <h1>C# Documentation</h1>
+                </header>
+                <ul>
+                    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li><a class="nav-link" href="#Hello-World">Hello World</a></li>
+                    <li><a class="nav-link" href="#Types-and-Variables">Types and Variables</a></li>
+                    <li><a class="nav-link" href="#Variables">Variables</a></li>
+                    <li><a class="nav-link" href="#Variable-Categories">Variable Categories</a></li>
+                    <li><a class="nav-link" href="#Methods">Methods</a></li>
+                    <li><a class="nav-link" href="#Classes-and-Objects">Classes and Objects</a></li>
+                    <li><a class="nav-link" href="#Members">Members</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <main id="main-doc">
+            
+            <section class="main-section">
+                <header>
+                    <h2 id="Introduction">Introduction</h2>
+                </header>
+                <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in the .NET ecosystem. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples, try the introduction to C# tutorials.</p>
+
+                <p>C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices.</p>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Hello-World">Hello World</h2>
+                </header>
+                <p>The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:</p>
+                <pre>
+                    <code>
+using System;
+
+class Hello
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World");
+    }
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Types-and-Variables">Types and Variables</h2>
+                </header>
+                <article>
+                <p>There are two kinds of types in C#: value types and reference types. Variables of value types directly contain their data. Variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for <code>ref</code> and <code>out</code> parameter variables).</p>
+                <p>An identifier is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by @. Using a reserved word as an identifier can be useful when interacting with other languages.</p>
+                <p>C#'s value types are further divided into simple types, enum types, struct types, nullable value types, and tuple value types. C#'s reference types are further divided into class types, interface types, array types, and delegate types.</p>
+                </article>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Variables">Variables</h2>
+                </header>
+                <article>
+                <p>Variables represent storage locations. Every variable has a  type that determines what values can be stored in the variable. C# is a type-safe language, and the C# compiler guarantees that values stored in variables are always of the appropriate type. The value of a variable can be changed through assignment or through use of the <code>++</code> and <code>--</code> operators.</p>
+                </article>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Variable-Categories">Variable Categories</h2>
+                </header>
+                <article>
+                <p>C# defines seven categories of variables: static variables, instance variables, array elements, value parameters, reference parameters, output parameters, and local variables. The sections that follow describe each of these categories.</p>
+                </article>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Methods">Methods</h2>
+                </header>
+                <article>
+                <p>A method is a member that implements a computation or action that can be performed by an object or class. Static methods are accessed through the class. Instance methods are accessed through instances of the class.</p>
+
+                <p>Methods may have a list of parameters, which represent values or variable references passed to the method. Methods have a return type, which specifies the type of the value computed and returned by the method. A method’s return type is <code>void</code> if it doesn't return a value.</p>
+                </article>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Classes-and-Objects">Classes and Objects</h2>
+                </header>
+                <article>
+                    <p>Classes are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for instances of the class, also known as objects. Classes support inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.</p>
+
+                <p>New classes are created using class declarations. A class declaration starts with a header. The header specifies:</p>
+                <ul>
+                    <li>The attributes and modifiers of the class</li>
+                    <li>The name of the class</li>
+                    <li>The base class (when inheriting from a base class)</li>
+                    <li>The interfaces implemented by the class.</li>
+                </ul>
+                </article>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2 id="Members">Members</h2>
+                </header>
+                <article>
+                    <p>All methods, fields, constants, properties, and events must be declared within a type; these are called the members of the type. In C#, there are no global variables or methods as there are in some other languages. Even a program's entry point, the <code>Main</code> method, must be declared within a class or struct (implicitly in the case of top-level statements).</p>
+                    <p>The following list includes all the various kinds of members that may be declared in a class, struct, or record.</p>
+                    <ul>
+                        <li>Fields</li>
+                        <li>Constants</li>
+                        <li>Properties</li>
+                        <li>Methods</li>
+                        <li>Constructors</li>
+                        <li>Events</li>
+                        <li>Finalizers</li>
+                        <li>Indexers</li>
+                        <li>Operators</li>
+                        <li>Nested Types</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
